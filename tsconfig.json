@@ -9,12 +9,48 @@
     "importHelpers": true,
     "target": "es5",
     "module": "es2015",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@testing/*": [
+        "libs/*"
+      ],
+      "@testing/electron": [
+        "xplat/electron/index.ts"
+      ],
+      "@testing/electron/*": [
+        "xplat/electron/*"
+      ],
+      "@testing/ionic": [
+        "xplat/ionic/index.ts"
+      ],
+      "@testing/ionic/*": [
+        "xplat/ionic/*"
+      ],
+      "@testing/nativescript": [
+        "xplat/nativescript/index.ts"
+      ],
+      "@testing/nativescript/*": [
+        "xplat/nativescript/*"
+      ],
+      "@testing/web": [
+        "xplat/web/index.ts"
+      ],
+      "@testing/web/*": [
+        "xplat/web/*"
+      ]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
