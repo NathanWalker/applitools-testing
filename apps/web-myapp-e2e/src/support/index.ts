@@ -13,5 +13,8 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
+// Applitools support
+import '@applitools/eyes-cypress/commands';
+
 // Import commands.js using ES2015 syntax:
 import './commands';
